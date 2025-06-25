@@ -1,4 +1,0 @@
-repository "mirror_me/mirror_me@13469801440249@cloud"
-  path "/"
-    br "/main"
-    co "/main"
