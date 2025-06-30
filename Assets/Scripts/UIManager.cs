@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
     public Button restartButton;
     public Button homeButton;
 
-    void Start()
+  public void Start()
     {
         if (levelCompletePanel != null)
         {
@@ -39,17 +39,17 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    void OnNextLevelButtonClicked()
+  public void OnNextLevelButtonClicked()
     {
         GameManager.instance.LoadNextLevel();
     }
 
-    void OnRestartButtonClicked()
+  public void OnRestartButtonClicked()
     {
         GameManager.instance.RestartLevel();
     }
 
-    void OnHomeButtonClicked()
+  public void OnHomeButtonClicked()
     {
         GameManager.instance.LoadLevel("Home");
     }

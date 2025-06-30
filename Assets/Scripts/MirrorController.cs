@@ -12,12 +12,12 @@ public class MirrorController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
 
-    void Start()
+  public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+  public void Update()
     {
         // Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);

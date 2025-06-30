@@ -10,7 +10,7 @@ public class TimedPlatform : MonoBehaviour
     private Renderer platformRenderer;
     private Collider2D platformCollider;
 
-    void Start()
+  public void Start()
     {
         platformRenderer = GetComponent<Renderer>();
         platformCollider = GetComponent<Collider2D>();

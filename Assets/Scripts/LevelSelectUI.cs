@@ -7,12 +7,12 @@ public class LevelSelectUI : MonoBehaviour
 {
     public Button[] levelButtons;
 
-    void Start()
+  public void Start()
     {
         UpdateLevelButtons();
     }
 
-    void UpdateLevelButtons()
+  public void UpdateLevelButtons()
     {
         int lastCompletedLevel = PlayerPrefs.GetInt("lastCompletedLevel", 0);
 
@@ -31,7 +31,7 @@ public class LevelSelectUI : MonoBehaviour
         }
     }
 
-    void LoadLevel(string levelName)
+    public void LoadLevel(string levelName)
     {
         SceneManager.LoadScene(levelName);
     }

@@ -19,7 +19,7 @@ public class SwitchDoor : MonoBehaviour
         CheckDoorState();
     }
 
-    void CheckDoorState()
+  public void CheckDoorState()
     {
         if (switchesActivated >= requiredSwitches)
         {

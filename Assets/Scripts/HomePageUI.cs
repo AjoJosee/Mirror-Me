@@ -9,7 +9,7 @@ public class HomePageUI : MonoBehaviour
     public Button levelSelectButton;
     public Button quitButton;
 
-    void Start()
+  public void Start()
     {
         playButton.onClick.AddListener(OnPlayButtonClicked);
         levelSelectButton.onClick.AddListener(OnLevelSelectButtonClicked);
